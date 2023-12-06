@@ -1,5 +1,3 @@
-*
-
 Este proyecto tiene como objetivo principal la creación de un sitio web que sirva como manual digital accesible, diseñado específicamente para personas con discapacidad visual y auditiva. La iniciativa se centra en proporcionar información valiosa de manera inclusiva, garantizando que todas las personas, independientemente de sus capacidades, puedan acceder y beneficiarse plenamente del contenido.
 
 Características Clave:
