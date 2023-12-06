@@ -1,0 +1,127 @@
+/* Flexible Slide-to-top Accordion Style*/
+.wrapper{
+	width: 50%;
+	max-width: 80%;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 50px;
+	margin-left: auto;
+	text-align: center;
+	padding: 0px;
+}
+.st-accordion{
+	width: 100%;
+	min-width: 60%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.st-accordion video {
+	width: 100%;
+	/*background-color: #FFF;*/
+	border-radius: 10px;
+	border: 5px solid #000;
+}
+.st-accordion ul li{
+	height: 70px;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.st-accordion ul li:first-child{
+    border-top:none;
+}
+.st-accordion ul li > a{
+	font-size: 2em;
+	display: block;
+	position: relative;
+	outline: none;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	color: #FFF;
+	background-color: #000000;
+	border-radius: 10px;
+	font-weight: lighter;
+	line-height: 70px;
+}
+.st-accordion ul li > a span{
+	text-indent: -9000px;
+	width: 26px;
+	height: 14px;
+	position: absolute;
+	top: 50%;
+	right: -26px;
+	margin-top: -7px;
+	opacity: 0;
+	color: #FFF;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background-color: transparent;
+	background-image: url(../imagenes/down.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.st-accordion ul li > a:hover{
+	color: #FFF;
+	background-color: #666666;
+}
+.st-accordion ul li > a:visited{
+	color: #FFF;
+}
+.st-accordion ul li > a:hover span{
+	opacity: 1;
+	right: 80px;
+	color: #FFF;
+	
+}
+.st-accordion ul li.st-open > a{
+
+}
+.st-accordion ul li.st-open > a span{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+	right:80px;
+	opacity:1;
+	
+	
+}
+
+.st-content{
+	width: 100%;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+
+@media screen and (max-width: 800px){
+	.st-accordion ul li > a{
+	font-size: 1em;
+	line-height: 40px;
+	}
+	
+	
+}
+@media screen and (max-width: 1000px) {
+	.wrapper{
+	width: 90%;
+	max-width: 80%;
+	
+	
+}
+
+.st-accordion video {	
+	padding: 5px;
+	
+
+}
+    }
